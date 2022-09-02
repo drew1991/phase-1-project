@@ -45,20 +45,21 @@ function showLinks(data) {
         sites.innerText= links.title
         sites.innerHTML= thing.title
         link.append(sites)
+//add eventListener  
         sites.addEventListener('click', () => {    
             showLinksInfo(site)
         })
     });
 }
 
-
+// Create Variables and grab the elements byt their id
 let poster = document.getElementById("poster")
 let title = document.getElementById("title")
 let report = document.getElementById("report")
 let filmInfo = document.getElementById("film-info") 
 let show = document.getElementById("show")
 let reported = document.getElementById("ticket-num")
-
+// create a function for showwing infomtation characteristic of the links
 function showLinksInfo(data) {
     title.innerText= data.title
     report.innerText= data.report
@@ -68,7 +69,7 @@ function showLinksInfo(data) {
     likes=data.likes
     
 }
-
+// function to decrement if user doesnt agree with a reported link and thus clicks 
 function reportedToDecrease(reported){
     
     if (reported >0 ){
@@ -78,8 +79,7 @@ function reportedToDecrease(reported){
     }
     return 0
 } 
-
-
+// function to incrememnt if user does agree with a reported link and thus clicks 
     function reportedToIncrease(reported){
         if (reported >0) {
             reported++
@@ -92,6 +92,7 @@ function reportedToDecrease(reported){
         }
        
     }
+    // create function
 const likeCount = document.getElementById("like-count")
 const commentList = document.getElementById("comments-list")
 document.getElementById("poster").addEventListener('submit', addComment)
