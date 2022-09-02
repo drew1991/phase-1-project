@@ -100,10 +100,11 @@ document.getElementById("like-button").addEventListener('click',()=>{
     likes +=1;
           renderLikes()
 })
-// write function to display comments on html
+// write function to display comments on html using foreach
 function renderComments(comments){
+   
     commentList.innerHTML="";
-    comments.forEach(renderComment);
+    comments,forEach(renderComment)
 
  }
  function renderComment(comment) {
