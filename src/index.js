@@ -3,8 +3,8 @@
     fetch("http://localhost:3000/links")
         .then(resp => resp.json())
         .then (data => {
-            showMLinks(data)
-            showMLinksInfo(data[0])
+            showLinks(data)
+            showLinksInfo(data[0])
     })
 // wait for html to be completely parsed before running script
     document.addEventListener("DOMContentLoaded", ()=>{alert('Welcome My first Project')})
@@ -36,17 +36,17 @@ btn.addEventListener("click", function () {
       
       
   } )
-// function to display info inform
+// function to display sites to html
 let link=document.querySelector("#links")
-function showMLinks(data) {
+function showLinks(data) {
     data.forEach(movie => {
-        let movies= document.createElement("li")
-        movies.className= "film item"
-        movies.innerText= links.title
-        movies.innerHTML= movie.title
-        link.append(movies)
-        movies.addEventListener('click', () => {    
-            showMLinksInfo(movie)
+        let sites= document.createElement("li")
+        sites.className= "film item"
+        sites.innerText= links.title
+        sites.innerHTML= movie.title
+        link.append(sites)
+        sites.addEventListener('click', () => {    
+            showLinksInfo(movie)
         })
     });
 }
@@ -59,7 +59,7 @@ let filmInfo = document.getElementById("film-info")
 let show = document.getElementById("show")
 let reported = document.getElementById("ticket-num")
 
-function showMLinksInfo(data) {
+function showLinksInfo(data) {
     title.innerText= data.title
     report.innerText= data.report
     filmInfo.innerText= data.description
