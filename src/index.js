@@ -39,14 +39,14 @@ btn.addEventListener("click", function () {
 // function to display sites to html
 let link=document.querySelector("#links")
 function showLinks(data) {
-    data.forEach(movie => {
+    data.forEach(thing => {
         let sites= document.createElement("li")
         sites.className= "film item"
         sites.innerText= links.title
-        sites.innerHTML= movie.title
+        sites.innerHTML= thing.title
         link.append(sites)
         sites.addEventListener('click', () => {    
-            showLinksInfo(movie)
+            showLinksInfo(site)
         })
     });
 }
