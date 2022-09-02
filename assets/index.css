@@ -1,0 +1,352 @@
+body {
+
+    background-image:url(/src/download.jpeg)
+  }
+ 
+  
+  .heading {
+    background-color: #333333;
+    margin-bottom: 20px;
+    padding: 10px 0px 5px 15px;
+    margin-top: 0%;
+  }
+  
+  .title {
+    background-color: #333333;
+    padding: 5px;
+    color: white;
+    font-size: larger;
+    color: white;
+  }
+  
+  #report {
+    background-color: #333333;
+    color: yellowgreen;
+    padding: 0px 0px 5px 5px;
+    border-radius:5%;
+    font-size: medium;
+    text-align: center;
+  }
+  
+  .content {
+     
+    color: white ;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 0%;
+    
+  }
+  
+  #subtitle {
+    color: white;
+    margin-left: 55px;
+  }
+  
+  #showing {
+    margin-left: 20px;
+  }
+  
+  #links li::before {
+    content: "";
+    
+  }
+  
+  .film {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    padding-bottom: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 15px;
+    
+    
+  }
+  li:hover {
+    background-color: #04AA6D;}
+  
+  .sold-out {
+    color: lightgray;
+  }
+  
+  img {
+    max-width: 25vw;
+  }
+  
+  #film-info {
+    padding-bottom: 15px;
+    color: black;
+  }
+
+  .list-container{
+    height: auto;
+    width: 110%;
+    background-color: white;
+    border-radius: 15%;
+    border-style: solid;
+    border-color: #04AA6D ;
+    margin-left: 0px;
+
+  }
+  /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    margin-right: 150px;
+    border-radius: 25%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3e8e41;
+    border-radius: 25%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color:#333;border-radius: 25%;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+ h3 {
+  color: #04AA6D;
+  background-color: #333333;
+  text-align: center;
+}
+#poster{
+  margin-left: 0px;
+}
+.btn{
+  background-color: #04AA6D;
+  padding: 16px;
+  font-size: 16px;
+  margin-right: 150px;
+  border-radius: 25%;
+  font-size: medium;
+  margin-top: 10px;
+}
+ h3{
+  margin-bottom: 10px;
+ }
+ * {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-card {
+  width: 300px;
+  border: 1px solid #00000020;
+  border-radius: 2px;
+  text-align: left;
+  background-color: white;
+}
+
+.image {
+  width: 300px;
+  /* border: 1px solid black; */
+}
+
+.title {
+  text-align: left;
+  padding: 15px 10px;
+  font-size: medium;
+  font-weight: 600;
+  color: white;
+}
+
+.likes-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.likes {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.like-button {
+  color: greenyellow;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  transition: color 300ms;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  color: green;
+}
+
+.like-button:active {
+  color: green;
+}
+
+.like-button:focus {
+  outline: none;
+}
+
+.comments {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 10px;
+  font-size: 0.85rem;
+}
+
+.comments li {
+  margin: 2px 0;
+  letter-spacing: 0.2px;
+}
+
+.comment-form {
+  width: 100%;
+  border-top: 1px solid #00000020;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.comment-input {
+  width: 83%;
+  border: solid;
+  font-size: medium;
+}
+
+.comment-input:focus {
+  outline: none;
+}
+
+.comment-button {
+  background-color: #04AA6D;
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  margin-left:0px;
+  border-radius: 25%;
+  margin-top: 10px;
+}
+
+.comment-button:hover {
+  color: white;
+}
+
+.comment-button:active {
+  color: yellowgreen;
+}
+
+.comment-button:focus {
+  outline: none;
+}
+.comments{
+  color: black;
+  font-style: italic;
+  font-size: medium;
+}
+#like-count{
+  color: #04AA6D;
+}
+#comments-list{
+  color: black;
+  background-color: #04AA6D;
+  border-color: black;
+}
+.scroll-left{
+  color: white;
+}
+.comment-input{
+  padding: 10px;
+  border-color: #04AA6D;
+  font-size: 20px;
+  margin-left:0px;
+  border-radius: 25%;
+  margin-top: 10px
+  
+}
+
+#myReport{
+  color: #04AA6D;
+}
+#agree{
+  background-color: red;
+  color: #04AA6D;
+  padding: 16px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 25%;
+  font-size: medium;
+  margin-top: 10px;
+  
+}
+#show{
+  background-color: red;
+  color: black;
+}
+#ticket-num{
+  color: black;
+}
