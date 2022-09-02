@@ -110,28 +110,29 @@ function renderComments(comments){
  function renderComment(comment) {
 
     // create a li element and attach a delete button to it
-    // const li = document.createElement('li')
-    // const delBut = document.createElement('button')
-    // li.textContent = comment.content
-    // delBut.textContent = "Delete Comment"
-    // delBut.style.backgroundColor="red"
-    // delBut.style.borderRadius='25%'
-    // delBut.style.marginLeft='150'
-    // commentList.append(li)
-    // li.appendChild(delBut)
-    const li =document.createElement('li`')
-    const delBut=document.createElement()
+    const li = document.createElement('li')
+    const delBut = document.createElement('button')
+    li.textContent = comment.content
+    delBut.textContent = "Delete Comment"
+    delBut.style.backgroundColor="red"
+    delBut.style.borderRadius='25%'
+    delBut.style.marginLeft='150'
+    commentList.append(li)
+    li.appendChild(delBut)
     delBut.addEventListener('click', function(e) {
         e.target.closest('li').remove()
       })
  }
+//  create a function fo adding a comment
  function addComment(event) {
+    // prevent default form action on submit
     event.preventDefault()
     const commentText ='=> ' + event.target.comment.value ;
     renderComment({content:commentText})
-
+// reset the input field upon submitting
     event.target.reset();
  }
+//  create function to display the likes count going up
  function renderLikes() {
     document.getElementById("like-count").textContent = `${likes} likes `
 }
