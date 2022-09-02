@@ -45,21 +45,20 @@ function showLinks(data) {
         sites.innerText= links.title
         sites.innerHTML= thing.title
         link.append(sites)
-//add eventListener  
         sites.addEventListener('click', () => {    
-            showLinksInfo(site)
+            showLinksInfo(thing)
         })
     });
 }
 
-// Create Variables and grab the elements byt their id
+// grab elements from html and assign them to variables
 let poster = document.getElementById("poster")
 let title = document.getElementById("title")
 let report = document.getElementById("report")
 let filmInfo = document.getElementById("film-info") 
 let show = document.getElementById("show")
 let reported = document.getElementById("ticket-num")
-// create a function for showwing infomtation characteristic of the links
+// create function to display the info
 function showLinksInfo(data) {
     title.innerText= data.title
     report.innerText= data.report
@@ -69,7 +68,7 @@ function showLinksInfo(data) {
     likes=data.likes
     
 }
-// function to decrement if user doesnt agree with a reported link and thus clicks 
+// function to decrement on button click
 function reportedToDecrease(reported){
     
     if (reported >0 ){
@@ -79,7 +78,8 @@ function reportedToDecrease(reported){
     }
     return 0
 } 
-// function to incrememnt if user does agree with a reported link and thus clicks 
+
+// function to increment on button click 
     function reportedToIncrease(reported){
         if (reported >0) {
             reported++
@@ -92,7 +92,7 @@ function reportedToDecrease(reported){
         }
        
     }
-    // create function
+// grab elements from dom, and add event listener and in the anonymous function increment likes on button click
 const likeCount = document.getElementById("like-count")
 const commentList = document.getElementById("comments-list")
 document.getElementById("poster").addEventListener('submit', addComment)
@@ -100,7 +100,7 @@ document.getElementById("like-button").addEventListener('click',()=>{
     likes +=1;
           renderLikes()
 })
-
+// write function to display comments on html
 function renderComments(comments){
     commentList.innerHTML="";
     comments.forEach(renderComment);
