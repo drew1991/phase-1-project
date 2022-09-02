@@ -109,15 +109,18 @@ function renderComments(comments){
  }
  function renderComment(comment) {
 
-    const li = document.createElement('li')
-    const delBut = document.createElement('button')
-    li.textContent = comment.content
-    delBut.textContent = "Delete Comment"
-    delBut.style.backgroundColor="red"
-    delBut.style.borderRadius='25%'
-    delBut.style.marginLeft='150'
-    commentList.append(li)
-    li.appendChild(delBut)
+    // create a li element and attach a delete button to it
+    // const li = document.createElement('li')
+    // const delBut = document.createElement('button')
+    // li.textContent = comment.content
+    // delBut.textContent = "Delete Comment"
+    // delBut.style.backgroundColor="red"
+    // delBut.style.borderRadius='25%'
+    // delBut.style.marginLeft='150'
+    // commentList.append(li)
+    // li.appendChild(delBut)
+    const li =document.createElement('li`')
+    const delBut=document.createElement()
     delBut.addEventListener('click', function(e) {
         e.target.closest('li').remove()
       })
