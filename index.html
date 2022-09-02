@@ -1,0 +1,118 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <link rel="stylesheet" href="assets/index.css" />
+  </head>
+  <body>
+    <!-- navbar dropdown menu buttons-->
+    <div class="heading">
+      <div class="item">
+        <h2 class="ui header">
+          <div class="content"> &#128009 BEWARE !!!! </div>
+          <div class="scroll-left"><marquee behavior="scroll" direction="left" scrollamount="20"> a 😎 b 🥸 c 🤩 d 🥳 e 😏 f 😒 g 😞 h 😔 j 😟 k 😕 l 🙁 m☹️ n 😣 p 😖 q 😫 r 😮 s 😲 t🥱 u 😴 v 🤤 w 😪 x 😵 y 🤐 z </marquee>
+          </div>
+          <div class="sub header" id="subtitle">
+            <div class="dropdown">
+              <button class="dropbtn">Home</button>
+              <div class="dropdown-content">
+                <a href="#">newest</a>
+                <a href="#">most recomended</a>
+                <a href="#">haha!</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">News</button>
+              <div class="dropdown-content">
+                <a href="#">Latest Products</a>
+                <a href="#">Tenders</a>
+                <a href="#">Annual General Meeting</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Contact</button>
+              <div class="dropdown-content">
+                <a href="#">Phone Contacts</a>
+                <a href="#">Online Contacts</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropbtn">About Us</button>
+              <div class="dropdown-content">
+                              </div>
+            </div>
+          </div>
+
+        </h2>
+      </div>
+
+    </div>
+    <!--navigation bar-->
+
+    <div class="ui centered grid">
+      <div class="four wide column">
+        <div class="list-container">
+          <ul class="ui divided list" id="links">
+            <li class="film-item" style="font-size: 42px; color: green; text-align: center;"><strong>LINKS.</strong></li>
+            
+            <!--<li my links go here</li>-->
+            
+          </ul>
+        </div>
+      </div>
+      <div class="four wide column">
+        <div class="ui cards" id="showing">
+          <div class="card">
+            <div id="title" class="title"></div>
+            <div id="report" class="meta"> </div>
+            <div class="content">
+              <div class="description">
+                <div id="film-info"></div>
+                <span id="show" class="ui label"></span>
+                <span id="ticket-num"></span>  
+              </div>
+            </div>
+            <div class="extra content">
+              <button id="agree" class="ui green button">
+                                Agree👍
+              </button>
+              <span id="myReport"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <!-- showing info -->
+      
+      <div class="four wide column">
+        <div class="image-card">
+          <h2 id="card-title" class="title">Comment Section</h2>
+          <img id="card-image" class="image" src="https://media0.giphy.com/media/3oxRmGNqKwCzJ0AwPC/giphy.gif?cid=ecf05e47mqqpbkl6b1yk9kp4u5kbl9txgf4tbtkvllj1igix&rid=giphy.gif&ct=g" alt="Title of image goes here too" />
+          <div class="likes-section">
+            <span id="like-count" class="likes">0 likes</span>
+            <button id="like-button" class="like-button">♥</button>
+          </div><p>
+                <ul id="comments-list" class="comments">
+                  <li id="commented"></li>
+                </ul>
+                <form id="poster" class="comment-form">
+                  <input
+                    class="comment-input"
+                    type="text"
+                    name="comment"
+                    id="comment"
+                    placeholder="Add a comment..."
+                  />
+                  <button class="comment-button" type="submit">comment</button>
+                  
+                </form>
+               
+       </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
